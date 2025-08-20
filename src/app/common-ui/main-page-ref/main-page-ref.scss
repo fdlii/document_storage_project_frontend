@@ -1,0 +1,28 @@
+div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+img {
+    width: 63px;
+    height: 70px;
+}
+
+a {
+    font-size: 36px;
+}
+
+a:is(:link, :visited) {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    text-decoration: underline;
+    color: red;
+}
