@@ -1,18 +1,19 @@
 @import "../public/fonts/fonts";
 
 :root {
-    --background-color: #D1D1D1;
+    --background-color: #F7F7F7;
     --text-color: #000;
     --fields-color: #fff;
     --buttons-color: #40BCFF;
 }
 
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
     font-family: 'Istok Web';
+}
+
+body {
+    background-color: var(--background-color);
 }

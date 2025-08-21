@@ -1,0 +1,23 @@
+.files_n_folders {
+    background-color: var(--fields-color);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 3fr auto;
+    width: 100%;
+}
+
+p {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+}
+
+.thin-line {
+    height: 1px;
+    opacity: 50%;
+}

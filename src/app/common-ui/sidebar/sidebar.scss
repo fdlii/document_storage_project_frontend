@@ -1,0 +1,20 @@
+img {
+    width: 322px;
+    height: 98px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer {
+    margin: 30px 34px;
+    gap: 101px;
+    flex-grow: 1;
+}
+
+.links {
+    margin: 8px;
+    gap: 47px;
+}
