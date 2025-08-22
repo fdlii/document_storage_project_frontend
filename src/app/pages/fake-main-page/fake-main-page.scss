@@ -2,4 +2,62 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+}
+
+.files_n_folders {
+    width: 100%;
+    height: 100%;
+}
+
+.reference_n_enter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 60px;
+    align-items: center;
+    margin-top: 38px;
+}
+
+a {
+    font-size: 32px;
+}
+
+a:is(:link, :visited) {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+    color: red;
+}
+
+button {
+    font-size: 40px;
+    background-color: var(--buttons-color);
+    border-radius: 20px;
+    color: var(--fields-color);
+    width: 180px;
+    height: 70px;
+    border: 3px solid var(--text-color);
+    cursor: pointer;
+    padding: 6px 33px;
+}
+
+button:active {
+    border: 6px solid var(--text-color);
+    padding: 3px 30px;
+    background-color: #1caefd;
+}
+
+p {
+    display: block;
+    font-size: 40px;
+    margin: 16px 25px;
 }
