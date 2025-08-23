@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reference-page',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './reference-page.scss'
 })
 export class ReferencePage {
+  private router: Router;
 
+  constructor(){
+    this.router = inject(Router);
+  }
+  RedirectToLogin() {
+    this.router.navigate(['login']);
+  }
 }
