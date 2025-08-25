@@ -1,9 +1,9 @@
 <div class="background">
-    <form>
-        <img src="assets/LogoPng.png">
-        <input type="text" placeholder="Е-mail">
-        <input type="text" placeholder="Пароль">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <img src="/assets/LogoPng.png">
+        <input type="text" placeholder="Е-mail" formControlName = "email">
+        <input type="text" placeholder="Пароль" formControlName = "password">
         <p>Нет аккаунта? <a routerLink = "/register">Зарегистрироваться</a></p>
-        <button>Войти</button>
+        <button type="submit">Войти</button>
     </form>
 </div>
