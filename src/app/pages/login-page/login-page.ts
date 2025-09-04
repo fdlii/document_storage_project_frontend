@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { inject } from '@angular/core';
 import { LoginService } from '../../shared/services/login-service';
-import { User } from '../../shared/models/user.interface';
+import { UserLoginRequest } from '../../shared/models/userLoginRequest.interface';
 import { Router } from '@angular/router';
 
 @Component({
@@ -28,7 +28,7 @@ export class LoginPage {
   }
 
   onSubmit() {
-    const user: User = {
+    const user: UserLoginRequest = {
       email: this.form.value.email,
       password: this.form.value.password
     };
@@ -38,7 +38,7 @@ export class LoginPage {
       },
 
       error: (error) => {
-        console.log(error);
+        console.log("error");
       }
     });
   }

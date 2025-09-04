@@ -1,1 +1,10 @@
-<p>register-page works!</p>
+<div class="background">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <img src="/assets/LogoPng.png">
+        <input type="text" placeholder="Е-mail" formControlName = "email">
+        <input type="text" placeholder="Пароль" formControlName = "password">
+        <input type="text" placeholder="Подтвердите пароль" formControlName = "confirmPassword">
+        <p>Есть аккаунт? <a routerLink = "/login">Войти</a></p>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>

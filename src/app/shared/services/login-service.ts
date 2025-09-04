@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { inject } from '@angular/core';
-import { User } from '../models/user.interface';
+import { UserLoginRequest } from '../models/userLoginRequest.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class LoginService {
     this.http = inject(HttpClient);
   }
 
-  Login(user: User){
-    return this.http.post<User>(`${this.baseURL}/login`, user, { withCredentials: true });
+  Login(user: UserLoginRequest){
+    return this.http.post<UserLoginRequest>(`${this.baseURL}/login`, user, { withCredentials: true });
   }
 }
