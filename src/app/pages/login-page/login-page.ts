@@ -34,7 +34,7 @@ export class LoginPage {
     };
     this.loginService.Login(user).subscribe({
       next: (response) => {
-        this.router.navigate(['main']);
+            this.router.navigate(['/main']);
       },
 
       error: (error) => {
