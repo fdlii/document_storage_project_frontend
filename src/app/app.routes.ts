@@ -11,7 +11,7 @@ export const routes: Routes = [
     { path: '', component: Layout, children:
         [
             { path: '', component: FakeMainPage },
-            { path: 'main', component: MainPage, canActivate: [canActivate] },
+            { path: 'main', component: MainPage/* , canActivate: [canActivate] */ },
             { path: 'reference', component: ReferencePage }
         ]
     },
